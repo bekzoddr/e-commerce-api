@@ -10,7 +10,7 @@ import HomeCollection from "../../components/homeCollection/HomeCollection";
 import { homeIconsproducts } from "../../static/Router";
 const Home = () => {
   const [data, setData] = useState([]);
-  const { data: proData } = useGetProductQuery({ limit: 10, count: 5 });
+  const { data: proData } = useGetProductQuery({ limit: 10, count: 2 });
   console.log(proData);
   let products = proData?.data?.map((el) => (
     <div key={el.id} className="card">
