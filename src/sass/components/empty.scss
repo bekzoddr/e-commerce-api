@@ -1,0 +1,17 @@
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in;
+    scroll-behavior: smooth;
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 25px;
+        h4{
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,198 @@
+.single{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-top: 200px !important;
+    .images{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img{
+            width: 500px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: rgb(245, 245, 245);
+        }
+        .first{
+            border: 1px solid black;
+        }
+        .thumbnails{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:48px ;
+            img{
+                width: 121px;
+                height: 114px;
+                border-radius: 4px;
+                background: rgb(245, 245, 245);
+            }
+        }
+    }
+}
+.color{
+    input{
+        appearance: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+    }
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-align: left;
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        h3 {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        .stock{
+            color: rgb(0, 255, 102);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+    .price, .color h3, .size h3{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-align: left;
+    }
+    .description{
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .color, .size{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h2{
+            padding: 6px 7px;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            &:hover{
+            background: rgb(219, 68, 68);
+            color: white;
+            border: 1px solid rgb(219, 68, 68);
+            }
+        }
+    }
+    .prices{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .counter{
+            display: flex;
+            align-items: center;
+            button{
+                padding: 10px 8px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                border-radius: 4px 0px 0px 4px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+            .text{
+                padding: 9.5px 34px;
+                border: 1px solid rgba(0, 0, 0, 0.5);;
+            }
+            .plus{
+                border-radius: 0px 4px 4px 0px;
+                background: rgb(219, 68, 68);
+                color: rgb(250, 250, 250);
+            }
+        }
+        .buy{
+            padding: 10px 48px;
+            color: rgb(250, 250, 250);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            border-radius: 4px;
+            background: rgb(219, 68, 68);
+        }
+        .like{
+            padding: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            font-size: 19px;
+        }
+    }
+}
+.delivery{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 19px 24px;
+    .deliver{
+        display: flex;
+        align-items: center;
+        padding: 10px auto;
+        gap: 15px;
+        .icon{
+            font-size: 25px;
+        }
+        h3{
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        h4{
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-decoration-line: underline;    
+        }
+    }
+}
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: gold !important;
+}

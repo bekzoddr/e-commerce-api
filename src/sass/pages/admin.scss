@@ -1,0 +1,67 @@
+.admin{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-top: 80px;
+    .admin__sidebar{
+        height: 100%;
+        max-height: 100vh ;
+        background: linear-gradient(#18045f, #0b56ad);
+        padding: 30px;
+        color: white;
+        a{
+            color: white;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 50px;
+            li a{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+            }
+        }
+    }
+}
+.admin__link{
+    display: block;
+    padding: 10px;
+}
+.admin__link.active{
+    background: #fff3;
+}
+.admin__content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 80px;
+    position: relative;
+    bottom: 50px;
+    button{
+        width: 300px;
+        padding: 13px;
+    }
+    .names, .number, .username{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    input{
+        width: 300px;
+    }
+    select, .nm{
+        padding: 18px;
+        border-radius: 4px;
+        width: 300px;
+        border: 1px solid #ccc;
+    }
+}

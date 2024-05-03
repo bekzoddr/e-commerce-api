@@ -1,0 +1,171 @@
+.account {
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+.account__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sidebarr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.sidebarr h2 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.sidebarr ul {
+  margin-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.sidebarr ul li {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  text-align: left;
+}
+.sidebarr ul li:hover {
+  color: #DB4444;
+}
+
+.account__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.account__links h3 {
+  color: #DB4444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.account__links h3 span {
+  color: black;
+}
+
+form {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  width: 800px !important;
+  padding: 40px 80px;
+  height: 630px;
+}
+
+.form__box, .passwords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.form__box h2, .passwords h2 {
+  color: rgb(219, 68, 68);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form__box .names, .passwords .names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.form__box .name, .form__box .surName, .form__box .email, .form__box .address, .passwords .name, .passwords .surName, .passwords .email, .passwords .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__box input, .passwords input {
+  padding: 13px 16px;
+  border-radius: 4px;
+  background: rgb(245, 245, 245);
+  width: 330px;
+  height: 50px;
+  border: none;
+}
+.form__box label, .form__box h3, .passwords label, .passwords h3 {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form__box .passwords, .passwords .passwords {
+  gap: 20px;
+}
+.form__box .passwords input, .passwords .passwords input {
+  width: 710px;
+  height: 50px;
+}
+.form__box .buttons button, .passwords .buttons button {
+  padding: 16px 48px;
+  border-radius: 4px;
+  background: rgb(219, 68, 68);
+  color: rgb(250, 250, 250);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form__box .buttons .cancel, .passwords .buttons .cancel {
+  background: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
+}
