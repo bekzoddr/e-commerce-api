@@ -4,10 +4,18 @@ import { PatternFormat } from "react-number-format";
 import Button from "@mui/material/Button";
 import { useGetCategoryQuery } from "../../../context/categoryApi";
 
+let unit = ["kg", "size", "color", "quantity"];
 const CreateProduct = () => {
-  const {data:categories}= useGetCategoryQuery()
+  const { data: categories } = useGetCategoryQuery();
   let categoryItem = categories?.data?.map((el) => (
-    <option key={el.id} value={el.title}></option>
+    <option key={el.id} value={el.title}>
+      {el.title}
+    </option>
+  ));
+  let unitItems = unit?.data?.map((el) => (
+    <option key={el} value={el}>
+      {el}
+    </option>
   ));
   return (
     <div>
@@ -34,14 +42,13 @@ const CreateProduct = () => {
           <div className="username">
             {" "}
             <select name="" id="">
-              <option value="user">User</option>
+              <option value="user">Select</option>
+              {categoryItem}
             </select>
-            <TextField
-              id="outlined-basic"
-              type="text"
-              label="category"
-              variant="outlined"
-            />
+            <select name="" id="">
+              <option value="user">Select</option>
+              {unitItems}
+            </select>
           </div>
           <TextField id="outlined-basic" type="file" variant="outlined" />
           <textarea name="" id="" cols="30" rows="10"></textarea>
